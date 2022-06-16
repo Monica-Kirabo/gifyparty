@@ -5,7 +5,7 @@ const limit= 9;
 const rating="g";
 const giphy_url= 'http://api.giphy.com/v1/gifs/search?api_key=${giphy_key}&q=${responsedata}' ;
 console.log(responsedata);
-function getResults(){
+function getResults(responsedata){
     
 var result=fetch(giphy_url)
   .then(response => response.json())
